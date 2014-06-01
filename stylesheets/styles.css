@@ -1,0 +1,348 @@
+/* Requires: normalize.css */
+/* Global Reset & Standards ---------------------- */
+*, *:before, *:after { 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+	}
+html { 
+	font-size: 62.5%; 
+	}
+body { 
+	background: white; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
+	font-size: 1.3rem; 
+	line-height: 1.6; 
+	color: #666; 
+	margin-top: 9rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+img, video, iframe {
+	max-width: 100%;
+	height: auto;
+	}
+/* Links ---------------------- */
+a img { 
+	border: none; 
+	}
+
+a { 
+	color: #2ba6cb; 
+	text-decoration: none; 
+	}
+
+a:hover { 
+	color: #2795b6; 
+	}
+
+a:focus { 
+	color: #2ba6cb; 
+	outline: none; 
+}
+
+p a, p a:visited { 
+	line-height: inherit; 
+	}
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.left {
+	margin-right: 12px;
+	margin-bottom: 10px;
+	float: left;
+}
+.right {
+	margin-left: 12px;
+	margin-bottom: 10px;
+	float: right;
+}
+/* Base Type Styles Using Modular Scale ---------------------- */
+p { 
+	font-family: inherit; 
+	font-weight: normal; 
+	margin-bottom: 1.6rem; }
+
+h1, h2, h3, h4, h5, h6 { 
+	color: #222222; 
+	text-rendering: optimizeLegibility; 
+	line-height: 1.1; 
+	margin-bottom: 1.2rem; 
+	margin-top: 1.4rem; 
+	font-family: 'Open Sans',sans-serif; 
+	}
+
+h1 { font-size: 3.8rem;}
+
+h2 { font-size: 2.8rem; }
+
+h3 { font-size: 2.5rem; }
+
+/*================================ */
+
+.container {
+	margin-bottom: 2rem;
+	}
+
+.sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sidebar ul li {
+	display: block;
+	border-bottom: 1px solid #ededed;
+	height: 30px;
+}
+/* main navigation */
+.nav {
+   background-color: #282828;
+    cursor: default;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    padding: 0.7rem 0.7rem 0 0.7rem;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.nav a {
+	font-size: 2.6rem;
+	font-family: Helvetica;
+	padding: .5rem 1.2rem;
+	text-decoration: none;
+	color: #999;
+	letter-spacing: .05rem;
+}
+.nav a:hover, .nav .active a {
+	background: #3EBBE0;
+	color: #fff;
+	border-radius: 5px;
+}
+.preface {
+	background: #EDEDED;
+	margin: 0 auto 3rem auto;
+	padding-top:2rem;
+	padding-bottom: 2rem;
+	font-weight: normal;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #D7D7D7;
+		}
+.preface h1, .preface p {
+	font-family: 'Open Sans',sans-serif;
+	font-weight: normal;
+	margin-bottom: 2rem;
+	text-shadow: 1px 1px #FFF;
+	}
+.preface p {
+	font-size: 1.8rem;
+	font-family: Georgia, 'Times New Roman', sans-serif;
+	font-style: italic;
+	color: #666;
+	line-height: 1.6;
+	}
+.preface .hero {
+	text-align: right;
+	}
+.hero img {
+	max-width: 85%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	}
+
+/* activities */
+.activities {
+	margin-bottom: 2rem;
+	}
+.activities h4 {
+	font-size: 1.3rem;
+	color:#666;
+	font-weight: normal;
+	text-shadow: 1px 1px #fff;
+	}
+.activities .intro {
+	text-align: center;
+	font-size: 1.8rem;
+	margin-top: none;
+	margin-top: 0;
+	}
+.activities .grid_4 p {
+	text-align: left;
+	}
+.intro {
+	margin-bottom: 2rem;
+	}
+.button {
+	color:#fff;
+	text-align:center;
+	padding: .8rem 2.5rem;
+	background: #3ebbe0;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 3px 0 #2ba6cb;
+	font-size: 1.8rem;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+	text-shadow: none;
+	}
+.more-activities {
+	border-top: 1px solid #EDEDED;
+	margin-bottom: 2rem;
+	padding: 1.6rem 0;
+	text-align: center;
+	}
+.footer, .mobile-nav-wrapper {
+	clear:both;
+	width:100%;
+	padding: 1.5rem;
+	background: #282828;
+	color: #fff;
+	}
+.footer .usergroup {
+	text-align: right;
+	}
+.mobile-nav-wrapper {padding: 0;background: #2ba6cb;text-align: center;}
+#mobile-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+	}
+#mobile-nav li {
+	display: block;
+	height: 40px;
+	border-bottom: 1px solid #59c8ea;
+}
+#mobile-nav a {
+	display: block;
+	height: 40px;
+	color: #FFF;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+#mobile-nav a:hover {
+	background: #3ebbe0;
+}
+.mobile-nav-wrapper, .anchor-link {display: none;}
+
+.more-articles {
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top: 1px solid #CCC;
+}
+
+
+
+/* Start of media queries to addres mobile devices */
+
+/* Addresses most tablets */
+@media screen and (max-width: 960px) {
+	h1 {
+	font-size: 3.2rem;
+	}
+	.preface p, .activities p.intro {
+	font-size: 1.6rem;
+	}
+	.activities h3 {
+	font-size: 2rem;
+	}
+}
+
+/* Addresses most small tablets and large smart phones*/
+@media screen and (max-width: 768px) {
+	.container_12 .grid_6, .container_12 .push_4, .container_12 .pull_8, .container_12 .push_4 {
+		float: none;
+	}
+	.container_12 .push_4, .container_12 .pull_8 {
+		left: 0;
+	}
+	.container_12 {
+	width: 98%;
+	margin: auto;
+	}
+	nav a {
+	padding: .4rem 1rem;
+	}
+	h1 {
+	font-size: 2rem;
+	}
+	.hero img {
+	width: 100%;
+	}
+	.preface p {
+	font-size: 1.5rem;
+	}
+	h2 {
+	font-size: 2.2rem;
+	}
+	.activities p.intro {
+		text-align: left;
+	}
+	.activities h3 {
+	font-size: 1.8rem;
+	}
+	.button {
+	padding: .5rem 2rem;
+	}
+	.activities .grid_4 {
+		display: block;
+		float: none;
+		width: 100%;
+		overflow: hidden;
+		padding-top:2rem;
+		padding-bottom: 1.5rem;
+		border-top: 1px solid #EDEDED;
+		text-align: center;
+	}
+}
+
+/* Addresses most smart phones */
+@media screen and (max-width: 480px) {
+	.mobile-nav-wrapper {display: block;}
+	.preface .grid_4, .preface .grid_8, .container_12 .grid_3, .container_12 .grid_8, .left {
+		float: none;
+	}
+
+	.preface {
+		text-align: center;
+	}
+	h2 {
+		font-size: 1.8rem;
+	}
+	.activities p.intro {
+		font-size: 1.4rem;
+	}
+	.footer .grid_6 {
+		display: block;
+		float: none;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+	}
+	/* Main Navigation */
+	.anchor-link {display: block; float: left;clear: both;}
+	.nav .anchor-link:hover {background: none;color: #2ba6cb;}
+	.nav ul {display: none;
+	}
+}

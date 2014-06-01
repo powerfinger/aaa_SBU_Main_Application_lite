@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<style type="text/css">
+<html lang="en"</html>
+    </style>
+.auto-style1 {
+	font-size: x-small;
+}
+
+<!--html> xmlns="http://www.w3.org/1999/xhtml" </!--html-->
+
+<html>
+<head>
+      <title></title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <link href="css/jquery.mobile-1.3.1.min.css" rel="stylesheet" type="text/css"/> 
+        <script src="libs/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+      <script src="libs/jquery.mobile-1.3.1.min.js" type="text/javascript"></script> 
+    <!-- this script causes href navigation in the page to fail, menu option in responsive design -->
+
+        <meta name=description content="Copy MP3 from app to zune/skydirve">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta http-equiv="cleartype" content="on">
+		
+        <link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="stylesheets/normalize.css">
+        <link rel="stylesheet" href="stylesheets/grid.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+  
+       </head>
+
+<body>        
+           <!-- start of navigation -->    
+<nav class="nav">
+  <a href="index.html">Home</a>
+</nav>
+
+ <section id="player" data-role="page" role="application" data-rnc-jspage="player">
+ 
+ 
+
+        <div class=main_right></div>
+
+            <header><div class=main_heading>
+                <h1>---------</h1></div>
+            </header>
+                               
+         <div class=main_document>
+
+             <article data-role="content">
+ <a href="#lyrics" data-role="button" data-transition="slide">To Lyrics</a>
+        <h3>Select Any Track to Play</h3>
+    <img   id="coverArt"   src="images/SBU_player.jpg" usemap=#SBUimagemap />
+	<map name=SBUimagemap>
+    <!--<area shape=rect coords=80,114,683,596 href="http://en.wikipedia.org/wiki/G">-->
+       <area id="track1" shape=rect coords="144, 31, 369, 134" href="#susie" title="susie" alt="Susie's Dancing"/>
+       <area id="track2" shape=rect coords="147, 178, 364, 275" href="#cajungirl" title="Cajun Girl" alt="Cajun Girl"/>
+       <area id="track3" shape=rect coords="370, 116, 591, 195" href="#mmorning" title="Miss Morning" alt="Miss Morning"/>
+       <area id="track4" shape=rect coords="409, 356, 587, 471" href="#sngbtwnus" title="Song Between Us" alt="Song Between Us"/>
+       <!-- <area id="track2" shape=rect coords="146, 39, 356, 180">-->
+</map>
+ <!--  <img   id="Img1"   src="media/MP3_Save.jpg" usemap=#SBUimagemap />
+	<map name=SBUimagemap>
+    <area shape=rect coords=80,114,683,596 href="http://en.wikipedia.org/wiki/G">
+
+<area id="Area1" shape=rect coords="0, 0Ho, 209, 95">
+</map>-->
+
+
+<p>This is some sample album text</p>
+
+        <audio id="playback1" src="media/02-War Master 01-16-13.mp3" controls="controls" loop </audio>
+
+</article>
+
+<footer data-role="footer" data-position="fixed">
+    <h1>FlyingColorsRnP</h1>
+  </footer>
+
+         <script src="default_dasKinderMain.js"></script>
+        <!--script src="js/vendor/jquery-2.0.2.min.js"></script>
+        <!--script src="js/helper.js"></script-->
+        <script src="js/main.js"></script>
+        <script>
+            var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,"script"));
+        </script>
+
+</section>
+
+        <section id="lyrics" data-role="page" data-rnc-jspage="lyrics">
+  <header data-role="header" data-position="fixed" data-theme="b">
+    <h1>Lyrics</h1>
+  </header>
+  <article data-role="content">
+    <a href="#player" data-role="button" data-transition="slide" data-direction="reverse">Return to Player</a>
+    <a href="#images" data-role="button" data-transition="slide" data-direction="reverse">To Image Gallery</a>
+	<!-- The manipulation of the content-secondary and content-primary classes is the key thing to understand -->
+			<div class="content-secondary">
+				<fieldset id="squirrels" data-role="controlgroup">
+					<legend>Pick a Lyric to View:</legend>
+					<input type="radio" name="radio-choice-1" id="radio-choice-1" value="./lyrics/cajun_girl_lyrics.jpg" checked="checked" />
+					<label for="radio-choice-1">Cajun Girl</label>
+
+					<input type="radio" name="radio-choice-1" id="radio-choice-3" value="./lyrics/song_between_us.jpg"  />
+					<label for="radio-choice-3">Song Between Us</label>
+				</fieldset>
+				<div class="show-page-button">Z
+					<a href="#page2" data-role="button" data-transition="slide">See Lyric Selection</a>
+				</div>
+			</div>
+			<div id="page1Chart" class="content-primary">
+				<div>
+					<!-- The trick is that there are two images, one on each page  -->
+					<img src="./lyrics/cajun_girl_lyrics.jpg" class="squirrel-image center" />
+				</div>
+			</div>
+  </article>
+
+  <footer data-role="footer" data-position="fixed">
+    <h2>Flying Colors</h2>
+  </footer>
+</section>
+    <section id="page2" data-role="page" data-rnc-jspage="page2">
+		<header data-role="header" data-position="fixed">
+			<h1></h1>
+		</header>
+		<article data-role="content">
+		<!-- Note: there are no content-xxxs here  -->
+			<a href="#page1" data-role="button" data-transition="slide" data-direction="reverse">Back to Lyric Selector</a>
+			<div>
+				<!-- Here is the second image, note: the class is the same as the first image -->
+				<img src="./lyrics/cajun_girl_lyrics.jpg" class="squirrel-image center"  />
+			</div>
+		</article>
+		<footer data-role="footer" data-position="fixed">
+			<h2>@therockncoder</h2>
+		</footer>
+	</section>
+
+
+<section id="images" data-role="page" data-rnc-jspage="images">
+  <header data-role="header" data-position="fixed" data-theme="b">
+    <h1>--------</h1>
+
+  <article data-role="content">
+    <a href="#player" data-role="button" data-transition="slide" data-direction="reverse">Return to Player</a>
+    <a href="#credits" data-role="button" data-transition="slide" data-direction="reverse">View Credits</a> 
+    </header>
+    <p>"Welcome to the Image Gallery - Scroll to view</p>
+
+   <img src="./images/Full_Credits_Page.jpg" class="squirrel-image center"  />
+   <img src="./images/InsideCredits_Cropped.jpg" class="squirrel-image center"  />
+   <img src="./images/CDopdruk.jpg" class="squirrel-image center"  />
+ 
+   <img src="./images/sample_inside.png" class="squirrel-image center"  />
+   <img src="./images/test_shot_front.jpg" class="squirrel-image center"  />
+   <img src="./images/Das_Kinder_post-its.jpg" class="squirrel-image center"  />
+   <img src="./images/GG_Bridge_Full_by_Drago_Dolar.jpg" class="squirrel-image center"  />
+
+
+ 
+       </article>
+
+  <footer data-role="footer" data-position="fixed">
+    <h1>Flying Colors</h1>
+  </footer>
+</section>
+
+    <section id="credits" data-role="page" data-rnc-jspage="credits">
+  <header data-role="header" data-position="fixed" data-theme="b">
+    <h1>Welcome to Page 4</h1>
+  </header>
+  <article data-role="content">
+    <a href="#player" data-role="button" data-transition="slide" data-direction="reverse">Return to Player</a>
+
+  </article>
+
+  <footer data-role="footer" data-position="fixed">
+    <h1>Flying Colors</h1>
+  </footer>
+</section>
+<script src="libs/app.js" type="text/javascript"></script>
+<script src="pages.js" type="text/javascript"></script>
+<script src="pages1.js" type="text/javascript"></script>
+<script src="js/jquery.rwdImageMaps.min.js"></script>
+<script>
+    $(document).ready(function (e) {
+        $('img[usemap]').rwdImageMaps();
+
+        $('area').on('click', function () {
+            alert($(this).attr('alt') + ' Selected');
+        });
+    });
+</script>
+</body>
+</html>
